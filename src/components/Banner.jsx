@@ -1,6 +1,27 @@
-import React, { } from 'react';
-import { FaGithub, FaLinkedinIn, FaFacebook } from "react-icons/fa";
+import React, { useEffect, useState } from 'react';
+import { FaGithub, FaLinkedinIn, FaFacebook, FaUpload } from "react-icons/fa";
+import Typewriter from 'typewriter-effect'
 const Banner = () => {
+
+   
+    const [scrollDown, setScrollDown] = useState(false)
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                setScrollDown(true)
+            }
+            else {
+                setScrollDown(false)
+            }
+        })
+    }, [])
+
+    const scrollUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
     const handleFacebookClick = () => {
         window.open('https://web.facebook.com/mostafiz.mostafiz.9216', '_blank');
     }
@@ -20,9 +41,29 @@ const Banner = () => {
         link.click();
     };
     return (
-        <div className=' w-1/2 mt-12 lg:px-12 sm:mx-5 flex flex-col space-y-6'>
+        <div id='banner' className=' w-1/2 mt-12 lg:px-12 sm:mx-5 flex flex-col space-y-6'>
+            {
+                scrollDown && (
+                    <button onClick={scrollUp} className=' text-5xl text-cyan-500 fixed bottom-[50px] right-[50px] '><FaUpload></FaUpload> </button>
+                )
+            }
+
+         
+
+
             <h1 className=' text-5xl font-bold'>Hey, I am <span className=' text-cyan-500'> Mostafizur</span> Rahman.</h1>
-            <h3 className=' text-3xl font-bold text-cyan-500'>I am a MERN stack Developer</h3>
+          <div className=' text-3xl'>
+          <Typewriter options={{
+                autoStart: true, loop: true, delay: 40, strings: [
+                    "I am a Software Engineer",
+                    "I am a Web Developer",
+                    "I am a Full stack Developer",
+                    "I am a Front End Developer"
+                ]
+            }}>
+
+            </Typewriter>
+          </div>
             <p className=' text-xl font-bold w-full'>I've been working with React and relevant technologies with a passion for developing interactive, dynamic web applications, and I'm particularly skilled at using React to produce engaging user interfaces.</p>
             <div className='flex '>
                 <div>
@@ -35,7 +76,7 @@ const Banner = () => {
             </div>
             <div>
                 <button className=' btn-non-color mr-3'>Contract</button>
-                <button  onClick={handleResumeClick} className='btn-non-color'>Resume</button>
+                <button onClick={handleResumeClick} className='btn-non-color'>Resume</button>
             </div>
         </div>
     );

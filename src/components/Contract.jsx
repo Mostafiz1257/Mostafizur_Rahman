@@ -7,6 +7,7 @@ const Contract = () => {
     
     return (
         <>
+            <div id='contract'>
             <h1 className=' text-4xl font-bold my-12 lg:mx-12 text-cyan-500'><span>Get in <span className=' underline-offset-4 underline'>Touch</span> </span> <span></span></h1>
             <div className='grid lg:grid-cols-2 lg:mx-12 gap-8 text-xl font-bold'>
                 <div className='grid '>
@@ -29,6 +30,7 @@ const Contract = () => {
                     </div>
 
                 </div>
+            </div>
             </div>
         </>
     );

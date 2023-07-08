@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import './Navbar.css'
 const Navbar = () => {
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
 
@@ -21,11 +21,11 @@ const Navbar = () => {
 
     }
     const navItems = <>
-        <li ><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Skills</a></li>
-        <li><a>Project</a></li>
-        <li><a>Contract</a></li>
+        <li ><a href='#banner'>Home</a></li>
+        <li><a href='#about'>About</a></li>
+        <li><a href='#skills'>Skills</a></li>
+        <li><a href='#project'>Project</a></li>
+        <li><a href='#contract'>Contract</a></li>
 
     </>
     return (
