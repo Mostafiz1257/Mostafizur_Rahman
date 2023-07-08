@@ -21,11 +21,11 @@ const Navbar = () => {
 
     }
     const navItems = <>
-        <li ><a href='#banner'>Home</a></li>
-        <li><a href='#about'>About</a></li>
-        <li><a href='#skills'>Skills</a></li>
-        <li><a href='#project'>Project</a></li>
-        <li><a href='#contract'>Contract</a></li>
+        <li ><a className='text-cyan-500 hover:text-cyan-400' href='#banner'>Home</a></li>
+        <li><a className='text-cyan-500 hover:text-cyan-400' href='#about'>About</a></li>
+        <li><a className='text-cyan-500 hover:text-cyan-400' href='#skills'>Skills</a></li>
+        <li><a className='text-cyan-500 hover:text-cyan-400' href='#project'>Project</a></li>
+        <li><a className='text-cyan-500 hover:text-cyan-400' href='#contract'>Contract</a></li>
 
     </>
     return (

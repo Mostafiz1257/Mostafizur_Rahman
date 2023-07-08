@@ -44,27 +44,28 @@ const Banner = () => {
         <div id='banner' className=' w-1/2 mt-12 lg:px-12 sm:mx-5 flex flex-col space-y-6'>
             {
                 scrollDown && (
-                    <button onClick={scrollUp} className=' text-5xl text-cyan-500 fixed bottom-[50px] right-[50px] '><FaUpload></FaUpload> </button>
+                    <button onClick={scrollUp} className=' text-4xl text-cyan-500 fixed bottom-[200px] right-[50px] '><FaUpload></FaUpload> </button>
                 )
             }
 
          
-
-
-            <h1 className=' text-5xl font-bold'>Hey, I am <span className=' text-cyan-500'> Mostafizur</span> Rahman.</h1>
-          <div className=' text-3xl'>
+            <h1 className=' text-5xl font-bold' data-aos="fade-up"
+     data-aos-anchor-placement="center-center">Hey, I am <span className=' text-cyan-500'> Mostafizur</span> Rahman.</h1>
+          <div className=' text-3xl text-cyan-500' data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
           <Typewriter options={{
                 autoStart: true, loop: true, delay: 40, strings: [
-                    "I am a Software Engineer",
-                    "I am a Web Developer",
-                    "I am a Full stack Developer",
-                    "I am a Front End Developer"
+                    "I am a Software Engineer...!",
+                    "I am a Web Developer...!",
+                    "I am a Full stack Developer...!",
+                    "I am a Front End Developer...!"
                 ]
             }}>
 
             </Typewriter>
           </div>
-            <p className=' text-xl font-bold w-full'>I've been working with React and relevant technologies with a passion for developing interactive, dynamic web applications, and I'm particularly skilled at using React to produce engaging user interfaces.</p>
+            <p className=' text-xl font-bold w-full' data-aos="fade-up"
+     data-aos-anchor-placement="center-center">I've been working with React and relevant technologies with a passion for developing interactive, dynamic web applications, and I'm particularly skilled at using React to produce engaging user interfaces.</p>
             <div className='flex '>
                 <div>
                     <span>  <FaFacebook onClick={handleFacebookClick} className=' hover:text-cyan-500 cursor-pointer text-3xl mr-3 hover:cursor-pointer'></FaFacebook>
