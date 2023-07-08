@@ -34,8 +34,8 @@ const Banner = () => {
                 <span>   <FaLinkedinIn onClick={handleLinkedInClick} className=' hover:text-cyan-500 cursor-pointer text-3xl hover:cursor-pointer'></FaLinkedinIn></span>
             </div>
             <div>
-                <button className=' btn-color mr-3'>Contract</button>
-                <button  onClick={handleResumeClick} className=' btn-color'>Resume</button>
+                <button className=' btn-non-color mr-3'>Contract</button>
+                <button  onClick={handleResumeClick} className='btn-non-color'>Resume</button>
             </div>
         </div>
     );

@@ -1,0 +1,52 @@
+[
+    {
+        "name": "HTML",
+        "picture": "https://i.ibb.co/3Wwzwm4/1.png"
+    },
+    {
+        "name": "Next JS",
+        "picture": "https://i.ibb.co/ctHG0HD/12.png"
+    },
+    {
+        "name": "CSS",
+        "picture": "https://i.ibb.co/Z6Y2nZv/2.png"
+    },
+    {
+        "name": "JavaScript",
+        "picture": "https://i.ibb.co/VCwgcP9/3.png"
+    },
+    {
+        "name": "React",
+        "picture": "https://i.ibb.co/1XH4LyH/4.png"
+    },
+    {
+        "name": "Bootstrap",
+       
+        "picture": "https://i.ibb.co/yygVdCK/11.png"
+    },
+    {
+        "name": "Tailwind CSS",
+        "picture": "https://i.ibb.co/Cv7KLmX/6.png"
+    },
+    {
+        "name": "Express.js",
+        "picture": "https://i.ibb.co/MkWc6CB/7.png"
+    },
+    {
+        "name": "MongoDB",
+        "picture": "https://i.ibb.co/1vxwNPq/13.jpg"
+    },
+    {
+        "name": "Node JS",
+        "picture": "https://i.ibb.co/SfHHHhj/8.png"
+    },
+    {
+        "name": "Firebase",
+        "picture": "https://i.ibb.co/gtkRLzy/9.jpg"
+    },
+    
+    {
+        "name": "My SQL",
+        "picture": "https://i.ibb.co/mvxH6C0/5.png"
+    }
+]

@@ -3,14 +3,16 @@ import { FaGithub  ,FaWhatsapp, FaRocket} from "react-icons/fa";
 
 
 const Contract = () => {
+  
+    
     return (
         <>
-            <h1 className=' text-4xl font-bold my-12 lg:mx-12 text-cyan-500'><span>Get in Touch </span> <span></span></h1>
-            <div className='grid lg:grid-cols-2 lg:mx-12 gap-8'>
+            <h1 className=' text-4xl font-bold my-12 lg:mx-12 text-cyan-500'><span>Get in <span className=' underline-offset-4 underline'>Touch</span> </span> <span></span></h1>
+            <div className='grid lg:grid-cols-2 lg:mx-12 gap-8 text-xl font-bold'>
                 <div className='grid '>
                     <input type="text" placeholder="Name" className="input input-bordered input-accent w-full " required /> <br />
-                    <input type="text" placeholder="Email" className="input input-bordered input-accent w-full" required /> <br />
-                    <input type="text" placeholder="Message" className="input input-bordered input-accent w-full h-[100px] " required /> <br />
+                    <input type="email" placeholder="Email" className="input input-bordered input-accent w-full" required /> <br />
+                    <input type="message" placeholder="Message" className="input input-bordered input-accent w-full h-[100px] " required /> <br />
                     <button className=' btn-color'> Send </button>
                 </div>
                 <div className=' space-y-5'>

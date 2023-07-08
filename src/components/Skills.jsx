@@ -1,10 +1,24 @@
-import React from 'react';
-
+import React, { useEffect, useState } from 'react';
+import './skills.css'
+import ShowSkills from './ShowSkills';
 const Skills = () => {
+    const [skills, setSkills] = useState([])
+    useEffect(() => {
+        fetch('skills.json')
+            .then(res => res.json())
+            .then(data => setSkills(data))
+    }, [])
     return (
-        <div>
-            <h2>This is skills section</h2>
-        </div>
+        <>
+            <h1 className=' text-4xl font-bold my-12 lg:mx-12 text-cyan-500'><span>My <span className=' underline-offset-4 underline'>Skills</span> </span> <span></span></h1>
+            <div className=' mx-12'>
+                <div className=' grid  md:grid-cols-4 gap-3 '>
+                    {
+                       skills.map((skill,index) => <ShowSkills key={index} skill={skill}></ShowSkills>)
+                    }
+                </div>
+            </div>
+        </>
     );
 };
 
