@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 const Navbar = () => {
-    const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light')
+    const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark')
 
     useEffect(()=>{
         localStorage.setItem('theme',theme)
@@ -46,11 +46,8 @@ const Navbar = () => {
                     {navItems}
                 </ul>
             </div>
-            {/* <div className="navbar-end">
-                <a className="btn">Download Resume</a>
-            </div> */}
               <div>
-                        <label className="swap swap-rotate text-white">
+                        <label className="swap swap-rotate ">
 
                             {/* this hidden checkbox controls the state */}
                             <input type="checkbox" onClick={handleDarkMode} />
